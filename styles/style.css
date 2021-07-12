@@ -94,7 +94,7 @@ hr{
 
 .course .banner img{
     width: 240px;
-    height: 104px;
+    height: 144px;
 }
 
 .course-title{
@@ -128,4 +128,36 @@ hr{
     padding: 5px 20px 5px 20px;
     background-color: #FFE4E8;
     border-radius: 30px;
+}
+
+
+/* media player */
+
+/* mobile */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .player{
+        flex-direction: column;
+    }
+    .blog, .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+
+  /* tablet devices */
+@media only screen and (min-width: 688px)and (max-width: 992px) {
+    .container{
+          width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2,1fr);
+    }
+
 }
